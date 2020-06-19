@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<title>Group Chat App</title>
+		<style>
+			body{
+				background-color: rgb(227, 231, 226);
+			}
+			.container{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				flex-direction: column;
+				height: 100vh;
+			}
+			.card{
+				background-color: rgb(50, 230, 65);
+				outline: none;
+				-webkit-box-shadow: 0px 2px 5px 0px rgba(2,143,2,1);
+				-moz-box-shadow: 0px 2px 5px 0px rgba(2,143,2,1);
+				box-shadow: 0px 2px 5px 0px rgba(2,143,2,1);
+			}
+			label{
+				color: black;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Group chat app</h2>
+			<div class="card" style="width:400px">
+			  <div class="card-body">
+				<form action="chat.html">
+					<div class="form-group mt-4">
+						<label for="username">Username:</label>
+						<input type="text" name="username" id="username" placeholder="Enter username..." required class="form-control"/>
+					</div>
+					<div class="form-group my-4">
+						<label for="room">Room:</label>
+						<select name="room" id="room" class="form-control">
+							<option value="Android">Android</option>
+							<option value="flutter">flutter</option>
+							<option value="PHP">PHP</option>
+							<option value="Nodejs">Nodejs</option>
+							<option value="Wordpress">Wordpress</option>
+							<option value="Java">Java</option>
+						</select>
+					</div>
+					<div class="text-center my-3">
+						<button type="submit" class="btn btn-success">Join Chat</button>
+					</div>
+	
+				</form>
+			  </div>
+			</div>
+		</div>	
+		
+	</body>
+</html>

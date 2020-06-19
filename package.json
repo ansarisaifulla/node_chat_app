@@ -1,0 +1,20 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "realtime chat app",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app",
+    "dev":"nodemon app"
+  },
+  "author": "Saifulla Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.26.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
